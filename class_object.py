@@ -3,8 +3,16 @@ class LotteryPlayer:
         self.name = name
         self.number = (1, 34, 56, 90)
 
+    def __str__(self):
+        return f"Person {self.name} year old"
+
+    def __repr__(self):
+        return f"<LotteryPlayer({self.name})>"
+
+
     def total(self):
         return sum(self.number)
+
 
 
 player_one = LotteryPlayer('John')

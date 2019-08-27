@@ -1,4 +1,4 @@
-def methodcaption(another):
+def method_caption(another):
     return another()
 
 
